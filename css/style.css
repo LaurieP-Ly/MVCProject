@@ -1,0 +1,739 @@
+/****Définition pour animation de l'index****/
+@-o-keyframes fadein {
+
+    /* sur Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInOpacity {
+
+    /* sur Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    /*******Grand ecran*******/
+
+/***Pour toutes les pages ***/
+
+
+a{
+    text-decoration: none;
+    color: #edd455;
+    
+}
+
+a:link {
+
+    color: #edd455;
+
+}
+
+
+
+a:hover {
+
+    color: #b39c2d;
+}
+
+
+
+/**** Burger **********/
+
+header p.burger {
+    margin-right: 3rem;
+    text-align: right;
+    line-height: 1;
+    font-size: 4rem;
+    color: #474645;
+}
+
+/* Ajout de l'icône "burger" */
+header p.burger::before {
+    content: '\2630';
+}
+
+
+/*** Menu à déployer **********/
+
+header nav{
+    z-index: 10 ; /* Pour placer le menu au-dessus des autres éléments */
+    position: absolute ; /* Pour créer un calque spécial pour le menu */
+    top : 0 ;  /* position en y*/
+    left : -150% ; /* position en x */
+    height : 200% ; 
+    width : 100% ; 
+    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.2rem 2rem;
+    transition: 0.5s;
+    
+    
+}
+
+nav.ouvert {
+    left: 0;
+    /* Ramener le décalage du menu à 0 */
+}
+
+/**** Icone de fermeture du menu */
+#fermeture_menu {
+    
+    border: none;
+    padding: 0rem;
+    padding-bottom: 2rem;
+}
+
+/* Ajout de l'icône de fermeture */
+#fermeture_menu::before {
+    content: '\2716';
+}
+
+/** animation fermeture menu **/
+.animation {
+    color:  #edd455;
+    font-size: 2rem;
+}
+
+header nav li {
+    padding: 2.5rem 0;
+
+    
+}
+
+header nav li:last-of-type {
+    border: none;
+}
+
+header nav ul a {
+    text-decoration: none;
+    
+}
+
+
+
+    .pages {
+
+
+        display: flex;
+        flex-direction: row;
+        font-family: fantasy;
+        align-items: center;
+
+
+    }
+
+
+    .titre > a {
+        text-decoration: none;
+        color: #edd455;
+        font-size: 3rem;
+
+
+    }
+
+    .titre {
+
+        position: absolute;
+        top: 3%;
+        left: 10%;
+
+    }
+
+
+
+    #li > li > a {
+        text-decoration: none;
+        color: #edd455;
+        font-size: 3rem;
+    }
+
+
+    #li > li > a:link {
+
+        color: #edd455;
+
+    }
+
+
+
+    #li > li > a:hover {
+
+        color: #b39c2d
+    }
+
+
+
+   
+
+    li {
+        list-style: none;
+        margin: 1rem;
+        color: #edd455;
+
+    }
+
+
+    #li {
+
+        display: flex;
+        flex-direction: column;
+        font-family: fantasy;
+        align-items: center;
+        
+
+    }
+
+
+
+
+
+
+    h1 {
+
+        color: #edd455;
+        font-family: fantasy;
+        font-size: 2rem;
+
+
+
+    }
+
+
+    /********INDEX*******/
+
+    #section {
+
+        margin-right: 3rem;
+        margin-left: 3rem;
+        padding: 15rem;
+        background-image: url("../../img/cooking-2132874_640.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100%;
+    }
+
+    #section {
+        -webkit-animation-name: fadeInOpacity;
+        animation-name: fadeInOpacity;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+    }
+
+
+
+    .contenant > section {
+        position: relative;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 8rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+
+
+    .texte_centrer1 {
+
+        font-size: 29px;
+        color: #474645;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: fantasy;
+
+
+    }
+
+
+    .texte_centrer2 {
+
+        color: #d18717;
+        font-size: 3.2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: serif;
+
+    }
+
+    button {
+
+        
+        background-color: white;
+        margin-top: 7rem;
+        border: 0.02rem solid grey;
+
+
+    }
+
+
+    button > a {
+
+        text-decoration: none;
+        color: #474645;
+        font-size: 1rem;
+        font-family: serif;
+
+
+
+    }
+
+
+    #description {
+
+        text-align: center;
+        margin-top: 10rem;
+        font-family: serif;
+        color: #474645;
+        font-size: 1.5rem;
+
+    }
+
+    
+
+    #whisk {
+        width: 20%;
+    }
+
+
+    #section2 {
+        margin-top: 15rem;
+        text-align: center;
+        font-family: serif;
+        color: #474645;
+        font-size: 1.5rem;
+    }
+
+
+    .imgIndex {
+        width: 250px;
+        height:auto;
+    }
+
+    .imgAgrandie {
+        width: 400px;
+        height:auto;
+    }
+
+
+    #images>a>img {
+
+        margin: 4rem;
+
+    }
+
+    /***Information***/
+
+    .information{
+        max-width: 50%;
+        margin-left: 20rem;
+        margin-top: 10rem;
+    }
+
+    #info{
+        background-color: #dbdbdb;
+        margin: 5rem;
+        padding: 5rem;
+        color: #6b6968;
+        font-size: 20px;
+
+    }
+
+
+/*****Cours et recette******/
+
+#recette{
+    color: #695b1c;
+    border-color: #474645;
+    border-style: solid;
+    border-width: 0.2rem;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+
+#recette>img{
+    max-width: 35%;
+    height: auto;
+    padding-left: 7rem;
+}
+
+#list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top:40%;
+    left:20%;
+    background-color: #dbdbdb;
+    
+    
+    
+}
+
+#list>li>a{
+    text-decoration: none;
+}
+
+#menuNiv{
+    background-color: #edd455;
+    color: #474645;
+    margin: 2rem;
+    padding-bottom: 25%;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    
+}
+
+#menuNiv>a{
+    text-decoration: none;
+    color: #474645;
+}
+
+#menuNiv>a:hover{
+    text-decoration: none;
+    color: #2e2d2c;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#h1Choix{
+    position: absolute;
+    right: 54%;
+    top: 25%;
+    font-size: 3.4rem;
+}
+
+#h1ChoixCours{
+
+    position: absolute;
+    right: 59%;
+    top: 25%;
+    font-size: 3.4rem;
+
+}
+
+
+#PChoix{
+
+    position: absolute;
+    color: #b39c2d;
+    font-family: fantasy;
+    left: 60%;
+    top: 32%;
+    font-size: 1.2rem;
+
+
+    
+}
+
+/****Vue_recette***/
+#caract{
+    color: #695b1c;
+    text-align: left;
+    padding: 2rem;
+    background-color: #edd455;
+
+}
+
+#ingredients{
+    color: #695b1c;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #a8a8a7;
+
+}
+
+#vue_recette{
+    margin: 8rem;
+    padding: 5rem;
+    text-align: center;
+    font-family: fantasy;
+    background-color: #f8f8ea;
+}
+
+#rec{
+
+    width: 50%;
+
+}
+
+#arrow::before{
+    
+    content:'\2190';
+    margin-left: 3rem;
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 2rem;
+    color: #474645;
+}
+#arrow>a{
+    text-decoration: none;
+    color: #474645;
+    font-family:fantasy;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+
+/*****Planning*******/
+
+#infoCours{
+    color: #695b1c;
+    text-align: left;
+    padding: 2rem;
+    background-color: #edd455ee;
+    width: 200px;
+    height: 150px;
+
+}
+
+#descriptionCours{
+
+    
+    text-align: left;
+    font-family: serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: #e7e7dfd3;
+    width: 100%;
+    height: 150px;
+    padding: 2rem;
+    color: #474645;
+
+
+}
+.PlanningCours{
+
+    color: #474645;
+
+}
+
+.PlanningCours>h2{
+    text-align: center;
+}
+
+.PlanningCours>img{
+    width: 20%;
+    border-color: #474645;
+    border-style: solid;
+    border-width: 0.2rem;
+
+}
+
+#divPlanning{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    align-items: center;
+
+}
+
+#listeHoraires{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+#horaire{
+
+    color: #695b1c;
+    border-color: #474645;
+    border-style: solid;
+    border-width: 0.2rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    background-color: white;
+
+    
+
+}
+
+#horaires{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+/*****Footer******/
+
+footer{
+
+    
+    background-color: #6b6968;
+    text-align: center;
+    font-family: serif;
+    padding: 2rem;
+}
+
+.admin{
+    text-decoration: none;
+}
+
+#footer{
+    margin-top: 25rem;
+    margin-bottom: 0;
+}
+
+
+/*****Recharge.php*****/
+
+.recharge{
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    padding: 5rem;
+    border-radius: 2%;
+}
+
+.recharge>section{
+
+    background-color: #bbb8b8;
+    color: #b39c2d;
+    border-radius: 2%;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+
+#aOffre{
+   color:  #474645;
+}
+
+#h3Offre{
+
+    color: #474645;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+/***Profil****/
+
+
+.profil{
+    color: #6b6968;
+    margin: 5rem;
+    padding: 5rem;
+    background-color: #f6f6d5;
+}
+
+
+
+
+
+
+
+}
+/*
+ * ----
+ * panier
+ * ----
+ */
+ #cart-table {
+	width: 100%;	
+	text-align: center;
+}
+
+#cart-table th, td{
+
+}
+
+#cart-table tr>th{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	border-top: 1px solid #a1a1ff;
+	border-bottom: 1px solid #a1a1ff;
+}
+
+#cart-table tr>td>img{
+	width: 20%;
+}
+
+#cart-table td{
+	border-bottom: 1px solid #eef;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+p#total-achat {
+	text-align: right;
+	margin: 30px 40px;
+	line-height: 1.5em;
+}
+
+div#empty-cart {
+	font-size: 20px;
+	text-align: center;
+	margin: 100px 0;
+}
+
+#check, #detail, #delete{
+    width: 3%;
+}

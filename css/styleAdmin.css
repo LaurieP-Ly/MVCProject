@@ -1,0 +1,96 @@
+
+body{
+    background-color:  #f1e294;
+    
+}
+
+#adminAjout{
+    display: flex;
+    flex-direction: row;
+    color:#695b1c;
+
+}
+
+#adminAjout>form{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #fff2af;
+
+}
+
+#adminAjout>fieldset, #loginAdmin>fieldset{
+    background-color: #fff2af;
+    
+
+}
+
+
+h2,h3{
+    text-align: center;
+    color:#695b1c;
+}
+
+#deco{
+    text-align: center;
+}
+
+#deco>a{
+    text-decoration: none;
+    color:  #695b1c;
+}
+
+
+
+#adminSupp, #infoClient{
+
+    color: rgb(97, 97, 97);
+
+}
+
+#adminSupp>section>ul>li, #infoClient>section>ul>li{
+
+    list-style: none;
+    margin: 2rem;
+
+}
+
+#adminSupp>section, #infoClient>section{
+
+    border-style: solid;
+    border-width: 2px;
+    padding: 2rem;
+    margin:1.5rem;
+
+}
+
+#lienSuppression{
+    text-decoration: underline overline;
+    color: #695b1c;
+}
+
+
+
+
+#loginAdmin>form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    background-color: #fff2af;
+    color:#695b1c;
+    width: 300px;
+    margin-top: 4rem;
+    
+
+
+}
+
+#loginAdmin>form>fieldset>a {
+    text-decoration: underline;
+    color: #695b1c;
+
+
+}
+
+
+

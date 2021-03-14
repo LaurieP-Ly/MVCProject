@@ -1,0 +1,8 @@
+{
+    "require": {
+        "stripe/stripe-php": "^7.61"
+    },
+    "dependencies": {
+        "stripe": "^8.119.0"
+    }
+}

@@ -1,0 +1,111 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+  }
+
+  h3,
+p {
+  
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #464850;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    margin: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #aab8f5;
+}
+  
+  section {
+    
+    
+    background-color: rgb(238, 234, 234);
+    
+  
+  }
+
+  
+  .article{
+  
+    
+    margin: 2rem;
+    background-color:white;
+    
+    
+  
+  }
+  
+  .descriptionArticle{
+  
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
+  
+  }
+  
+  img {
+    border-radius: 6px;
+    margin: 10px;
+    width: 54px;
+    height: 57px;
+  }
+
+
+  #checkout-button {
+    height: 36px;
+    background: #92a1e6;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius:0.5rem;
+  }
+
+  strong{
+      margin: 10rem;
+      color: #464850;
+  }
+
+  a{
+      color: #464850;
+      text-decoration: none;
+  }
+
+
+
+  /***** Cancel.html *****/
+
+  .cancel{
+
+    margin:10rem;
+    padding: 10rem;
+    font-size: 20px;
+}
+.cancel>p{
+    font-size: 30px;
+    margin: 2rem;
+}
+
+.cancel>button{
+
+    height: 36px;
+    background: #92a1e6;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius:0.5rem;
+
+}
